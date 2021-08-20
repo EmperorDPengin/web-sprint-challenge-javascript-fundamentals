@@ -24,15 +24,38 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
-1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
+
+    A. 
+        .map() - Is used to for Modifying Data in arrays, it wont modify the original array, but it will return a new one with the modified data;
+                ex. Having an array with Produce Objects Info, [name, price, type] and we want to display the name of all objects before the person clicks on them to see the price. We can use
+                    .map to go thru every item and store the object.name in the returned array.
+        
+        .reduce() - Is used to return a single value from an array. The uses can be from simple addition to keeping track of several scores and returning a last value, but at the end it is a single value that u have to interpret somehow.
+                ex. Used for calculating the average score in a class of student by  having each score added together and divided by the number of students.
+        
+        .filter() - It sorts thru data with a true false statement, if it is what is looking for it will return a new array not modifying the original with the new data that meet the criteria.
+                ex. Can be used for removing items not anted in a page displayed to the user or by user request. Having all Hotels without Wheel chair access from the page if the user needs it.
 
 2. Explain the difference between a callback and a higher order function.
 
+    A. A Higher Order Function Receives argument Functions to execute with a more specific purpose. While a callback is used for easy access and receive the arguments to modify, operate or  store.
+
 3. Explain what a closure is.
+
+    A. a closure is when a function accesses defined data from outside its own scope into another function
 
 4. Describe the four principles of the 'this' keyword.
 
+    A. 
+        window binding - if none of the orher 'this' rules apply it will return the global object,
+        implicit binding - is whatever the dot to the left points to when calling a fucntion
+        explicit binding - when using .call, .apply or .bind we are teling JS, exactly what 'this' refers to.
+        new binding - is during the creating of a new object and it lets 'this' be attached to the object, pointing functions to it.
+
 5. Why do we need super() in an extended class?
+
+    A. Super is a way to say Give everything the parent had to the child and so 'this' knows what else it is bound to.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
